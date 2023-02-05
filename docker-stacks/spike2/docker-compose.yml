@@ -18,7 +18,7 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - shared-workspace:/opt/workspace
+      - ./shared-workspace:/opt/workspace
 
 
   spark-master:
@@ -28,7 +28,7 @@ services:
       - 8090:8080
       - 7077:7077
     volumes:
-      - shared-workspace:/opt/workspace
+      - ./shared-workspace:/opt/workspace
 
 
   spark-worker-1:
@@ -39,9 +39,9 @@ services:
       - SPARK_WORKER_MEMORY=4g
       - SPARK_MASTER=spark://spark-master:7077
     ports:
-      - 8081:8081
+      - 8080:8081
     volumes:
-      - shared-workspace:/opt/workspace
+      - ./shared-workspaceshared-workspace:/opt/workspace
     depends_on:
       - spark-master
 
@@ -56,7 +56,7 @@ services:
     ports:
       - 8082:8081
     volumes:
-      - shared-workspace:/opt/workspace
+      - ./shared-workspaceshared-workspace:/opt/workspace
     depends_on:
       - spark-master
 
@@ -70,7 +70,7 @@ services:
       ME_CONFIG_MONGODB_PORT: 27017
     #      ME_CONFIG_MONGODB_ADMINUSERNAME: root
     #      ME_CONFIG_MONGODB_ADMINPASSWORD: aspirina765Express2023!
-    links:
+    depends_on:
       - mongo1
       - mongo2
       - mongo3
