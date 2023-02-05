@@ -24,3 +24,17 @@ services:
     volumes:
       - ./data:/data/db
 
+  web-scrapping-server:
+    container_name: message-server
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: loterias-api:0.0.1-SNAPSHOT
+    depends_on:
+      - mongo
+
+
+
+
+
+

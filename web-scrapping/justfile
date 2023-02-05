@@ -2,6 +2,11 @@ alias d := docker
 alias r := run
 alias p := ps
 alias dw := down
+alias db := docker-build
+alias b := build
+alias t := test
+alias td := test-docker
+
 
 # yarn global add just-cli
 # npm i -g just-cli
@@ -18,8 +23,23 @@ docker:
 ps:
   docker-compose ps
 
+# cleanup docker-compose features
 down:
     docker-compose down -v
 
+# build spring-boot jar
+build:
+  ./mvnw clean package -DskipTests
+
+docker-build:
+  sudo chown -R $USER:users ./data
+  sudo chown -R $USER:users ./data/*
+  docker build -t loterias-api:0.0.1-SNAPSHOT .
+
+test:
+  java -jar target/loterias-api-0.0.1-SNAPSHOT.jar
+
+test-docker:
+  docker run loterias-api:0.0.1-SNAPSHOT
 
 

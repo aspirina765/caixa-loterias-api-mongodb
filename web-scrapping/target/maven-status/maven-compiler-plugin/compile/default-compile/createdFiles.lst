@@ -1,5 +1,5 @@
-com/gutotech/loteriasapi/consumer/LoteriasUpdate$LoteriaUpdateTask.class
 com/gutotech/loteriasapi/model/Loteria.class
+com/gutotech/loteriasapi/consumer/LoteriasUpdate$LoteriaUpdateTask.class
 com/gutotech/loteriasapi/repository/ResultadoRepository.class
 com/gutotech/loteriasapi/util/SSLHelper$1.class
 com/gutotech/loteriasapi/consumer/Consumer$1.class
@@ -9,8 +9,8 @@ com/gutotech/loteriasapi/model/exception/ResourceNotFoundException.class
 com/gutotech/loteriasapi/model/ResultadoId.class
 com/gutotech/loteriasapi/rest/exception/ExceptionsHandler.class
 com/gutotech/loteriasapi/LoteriasApiApplication.class
-com/gutotech/loteriasapi/consumer/ScheduledConsumer.class
 com/gutotech/loteriasapi/model/Resultado.class
+com/gutotech/loteriasapi/consumer/ScheduledConsumer.class
 com/gutotech/loteriasapi/consumer/Consumer.class
 com/gutotech/loteriasapi/rest/ApiRestController.class
 com/gutotech/loteriasapi/service/ResultadoService.class
