@@ -74,7 +74,7 @@ from pyspark.sql import functions as F
 movAvg = df.withColumn("movingAverage", F.avg("price")
              .over( Window.partitionBy("company_symbol").rowsBetween(-1,1)) )
 ```
-To see our data with the new moving average column we can issue a 
+To see our data with the new moving average column we can issue a
 movAvg.show().
 
 `movAvg.show()`
@@ -119,4 +119,3 @@ Parameter | Description
 This data generator tool is designed to write to one collection and read from another.  It is also used as part of a Kafka connector demo where the data is flowing through the Kafka system.  In our repository example, if you just want to see the data as it is written to the "Source" collection use the -r parameter as follows:
 
 `python3 create-stock-data.py -r Source`
-

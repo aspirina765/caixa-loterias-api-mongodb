@@ -1,2 +1,2 @@
-/home/rhel9dev/TW-SOLUTIONS/scripts/GP/loterias-api/src/test/java/com/gutotech/loteriasapi/LoteriasApiApplicationTests.java
-/home/rhel9dev/TW-SOLUTIONS/scripts/GP/loterias-api/src/test/java/com/gutotech/loteriasapi/rest/ApiRestControllerTests.java
+/home/rhel9dev/TW-SOLUTIONS/scripts/GP/caixa-loterias-api-mongodb/src/test/java/com/gutotech/loteriasapi/rest/ApiRestControllerTests.java
+/home/rhel9dev/TW-SOLUTIONS/scripts/GP/caixa-loterias-api-mongodb/src/test/java/com/gutotech/loteriasapi/LoteriasApiApplicationTests.java
