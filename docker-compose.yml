@@ -22,5 +22,5 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - /home/aspirina765/Desenvolvimento/Docker/Volumes/MongoDB:/data/db
+      - "$(pwd):/data/db"
 

@@ -1,0 +1,10 @@
+blog/
+.DS_Store
+dump/
+data.csv
+Archive/
+*.jar
+encryption/
+daily.csv
+mongos3.py
+sinktest.py
