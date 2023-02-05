@@ -22,5 +22,5 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - "$(pwd):/data/db"
+      - ./data:/data/db
 
